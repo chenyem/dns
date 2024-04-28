@@ -1,0 +1,15 @@
+{
+  "version": "v0.0.14",
+  "notes": "update ...4",
+  "pub_date": "2024-04-28T03:06:11.805Z",
+  "platforms": {
+    "darwin": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSMlVyYS82SHFpakFIT3RadWNKc2RPSzZGT2hwNTkvUXJwUGc1WXZMWmREOG0yczh2K2E2YlJYYWIxdGZTM0JWc1lVMnBNRzVUelUzcExlOVVIR2ZPcnZpZkg4QmVYSEFnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzE0MjczNDkwCWZpbGU6aWRucy5hcHAudGFyLmd6Cnd5ekNENWpSRUJsOHY2eE9zdkdGU2lIU0NMckFCUVZhUjBvVzE1cW4wMTQ1SnRmc2V3VjRKMHVyVnlHclIwWDBERldPMmduN3pBU21EaXVhNDNIdURBPT0K",
+      "url": "https://github.com/chenyem/dns/releases/download/v0.0.14/idns_0.0.14_macos_x86_64.app.tar.gz"
+    },
+    "darwin-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSMlVyYS82SHFpakFIT3RadWNKc2RPSzZGT2hwNTkvUXJwUGc1WXZMWmREOG0yczh2K2E2YlJYYWIxdGZTM0JWc1lVMnBNRzVUelUzcExlOVVIR2ZPcnZpZkg4QmVYSEFnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzE0MjczNDkwCWZpbGU6aWRucy5hcHAudGFyLmd6Cnd5ekNENWpSRUJsOHY2eE9zdkdGU2lIU0NMckFCUVZhUjBvVzE1cW4wMTQ1SnRmc2V3VjRKMHVyVnlHclIwWDBERldPMmduN3pBU21EaXVhNDNIdURBPT0K",
+      "url": "https://github.com/chenyem/dns/releases/download/v0.0.14/idns_0.0.14_macos_x86_64.app.tar.gz"
+    }
+  }
+}
