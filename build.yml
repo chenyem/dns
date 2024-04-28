@@ -69,7 +69,7 @@ jobs:
 
       - run: pnpm tauri build --target ${{ matrix.target }}
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.TAURI_TOKEN }}
           TAURI_PRIVATE_KEY: ${{ secrets.TAURI_PRIVATE_KEY }}
           TAURI_KEY_PASSWORD: ${{ secrets.TAURI_KEY_PASSWORD }}
 
@@ -106,12 +106,12 @@ jobs:
       - name: Create Release
         uses: softprops/action-gh-release@master
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.TAURI_TOKEN }}
         with:
           repository: chenyem/dns
           tag_name: v${{ env.version }}
           name: idns v${{ env.version }}
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.TAURI_TOKEN }}
           body: See the assets to download this version and install.
           prerelease: false
           generate_release_notes: false
@@ -139,7 +139,7 @@ jobs:
       - run: pnpm install --frozen-lockfile
 
       - name: Updater JSON
-        run: pnpm updater --token=${{ secrets.GITHUB_TOKEN }}
+        run: pnpm updater --token=${{ secrets.TAURI_TOKEN }} --repo=dns --owner=chenyem
 
       - name: Only support platforms (fix check_update error )
         run: pnpm support --platforms=darwin,darwin-x86_64
@@ -147,7 +147,8 @@ jobs:
       - name: Deploy install.json
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          # github_token: ${{ secrets.TAURI_TOKEN }}
+          personal_token: ${{ secrets.TAURI_TOKEN }}
           external_repository: chenyem/dns
           publish_dir: ./updater
           # force_orphan: true
